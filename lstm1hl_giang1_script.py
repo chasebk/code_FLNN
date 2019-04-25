@@ -11,7 +11,7 @@ run_times = None
 
 if test_type == "normal":           ### For normal test
     run_times = 1
-    pathsave = "paper/results/test/"
+    pathsave = "paper/results/final/"
     all_model_file_name = "log_models"
 elif test_type == "stability":      ### For stability test (n times run with the same parameters)
     run_times = 15
@@ -23,7 +23,7 @@ else:
 def train_model(item):
     root_base_paras = {
         "dataset": dataset,
-        "data_idx": (0.33, 0.33, 0.33),
+        "data_idx": (0.66, 0, 0.33),
         "sliding": item["sliding_window"],
         "expand_function": item["expand_function"],
         "multi_output": requirement_variables[2],

@@ -104,7 +104,8 @@ flgann_giang1_paras = {
 
 ####: LSTM-1HL
 lstm1hl_giang1_paras = {
-    "sliding": [2, 3, 5, 10],
+    "sliding_window": [2, 3, 5, 10],
+    "expand_function": [None],             # 0:chebyshev, 1:legendre, 2:laguerre, 3:powerseries, 4:trigonometric
     "hidden_sizes" : [[5], [10] ],
     "activations": [("elu", "elu")],  # 0: elu, 1:relu, 2:tanh, 3:sigmoid
     "learning_rate": [0.0001],
