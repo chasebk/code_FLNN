@@ -33,6 +33,14 @@ ggtrace_multi_ram = [
     "multi_ram/",           # path_save_result
 ]
 
+giang1 = [
+    "data/formatted/giang/",      # pd.readfilepath
+    [3],                 # usecols trong pd
+    False,                  # multi_output
+    None,                      # output_idx
+    "giang1/",           # path_save_result
+]
+
 
 ######################## Paras according to the paper
 
@@ -79,6 +87,21 @@ mlnn2hl_paras_final = {
 
 
 # ========================== Hybrid FLNN =================================
+
+#### : FL-GANN
+flgann_giang1_paras = {
+    "sliding_window": [2, 3, 5],
+    "expand_function": [0, 1, 2, 3, 4],             # 0:chebyshev, 1:legendre, 2:laguerre, 3:powerseries, 4:trigonometric
+    "activation": ["elu", "tanh"],                  # 0: elu, 1:relu, 2:tanh, 3:sigmoid
+    "train_valid_rate": [(0.6, 0.4)],
+
+    "epoch": [700],
+    "pop_size": [250],                  # 100 -> 900
+    "pc": [0.95],                       # 0.85 -> 0.97
+    "pm": [0.025],                      # 0.005 -> 0.10
+    "domain_range": [(-1, 1)]           # lower and upper bound
+}
+
 
 #### : FL-GANN
 flgann_paras = {
