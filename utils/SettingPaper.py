@@ -102,6 +102,22 @@ flgann_giang1_paras = {
     "domain_range": [(-1, 1)]           # lower and upper bound
 }
 
+####: LSTM-1HL
+lstm1hl_giang1_paras = {
+    "sliding": [2, 3, 5, 10],
+    "hidden_sizes" : [[5], [10] ],
+    "activations": [("elu", "elu")],  # 0: elu, 1:relu, 2:tanh, 3:sigmoid
+    "learning_rate": [0.0001],
+    "epoch": [1000],
+    "batch_size": [128],
+    "optimizer": ["adam"],   # GradientDescentOptimizer, AdamOptimizer, AdagradOptimizer, AdadeltaOptimizer
+    "loss": ["mse"],
+    "dropouts": [[0.2]]
+}
+
+
+
+
 
 #### : FL-GANN
 flgann_paras = {

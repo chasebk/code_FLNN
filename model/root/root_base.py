@@ -33,6 +33,9 @@ class RootBase(object):
         self.time_series = TimeSeries(self.dataset, self.data_idx, self.sliding, self.expand_function, self.output_idx, self.method_statistic)
         self.X_train, self.y_train, self.X_valid, self.y_valid, self.X_test, self.y_test = self.time_series._preprocessing_2d__()
 
+    def _preprocessing_3d__(self):
+        self.time_series = TimeSeries(self.dataset, self.data_idx, self.sliding, self.expand_function, self.output_idx,self.method_statistic)
+        self.X_train, self.y_train, self.X_valid, self.y_valid, self.X_test, self.y_test = self.time_series._preprocessing_3d__()
 
     def _save_results__(self, y_actual=None, y_predict=None, y_actual_normalized=None, y_predict_normalized=None, loss_train=None):
         if self.multi_output:
