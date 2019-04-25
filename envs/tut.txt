@@ -1,0 +1,15 @@
+First, Install conda with this tutorial:
+    https://conda.io/docs/user-guide/install/index.html
+
+- Export environment:
+    source activate myenv
+    conda env export > environment.yml
+
+- Import and create new environment from file .yml
+    conda env create -f environment.yml (note: the first line in this file is the name of your environment)
+
+
+- Delete environment:
+    conda env remove --name myenv
+
+
