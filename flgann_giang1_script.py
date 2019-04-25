@@ -5,7 +5,7 @@ from utils.SettingPaper import flgann_giang1_paras as param_grid
 from utils.SettingPaper import giang1
 
 rv_data = [giang1]
-data_file = ["giang1"]
+data_file = ["final"]
 test_type = "normal"                ### normal: for normal test, stability: for n_times test
 run_times = None
 
