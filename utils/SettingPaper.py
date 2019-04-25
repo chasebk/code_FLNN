@@ -90,7 +90,7 @@ mlnn2hl_paras_final = {
 
 #### : FL-GANN
 flgann_giang1_paras = {
-    "sliding_window": [2, 3, 5],
+    "sliding_window": [2, 3, 5, 10],
     "expand_function": [0, 1, 2, 3, 4],             # 0:chebyshev, 1:legendre, 2:laguerre, 3:powerseries, 4:trigonometric
     "activation": ["elu", "tanh"],                  # 0: elu, 1:relu, 2:tanh, 3:sigmoid
     "train_valid_rate": [(0.6, 0.4)],
