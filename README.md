@@ -1,3 +1,16 @@
+## Cite us
+* If you see my code and data useful and use it, please cite us as follows
+
+    * Nguyen, T., Tran, N., Nguyen, B. M., & Nguyen, G. (2018, November). A Resource Usage Prediction System Using Functional-Link and Genetic Algorithm Neural Network for Multivariate Cloud Metrics. In 2018 IEEE 11th Conference on Service-Oriented Computing and Applications (SOCA) (pp. 49-56). IEEE.
+
+    * Nguyen, T., Nguyen, B. M., & Nguyen, G. (2019, April). Building Resource Auto-scaler with Functional-Link Neural Network and Adaptive Bacterial Foraging Optimization. In International Conference on Theory and Applications of Models of Computation (pp. 501-517). Springer, Cham.
+
+* If you want to know more about code, or want a pdf of both above paper, contact me: nguyenthieu2102@gmail.com
+
+* Take a look at this repos, the simplify code using python (numpy) for all algorithms above. (without neural networks)
+	
+	* https://github.com/thieunguyen5991/metaheuristics
+	
 ## How to read my repository
 1. data: include raw and formatted data
 2. envs: include conda environment and how to install conda environment 
@@ -26,6 +39,17 @@
     * vms_real_used_CPU_RAM.csv (the real amount of CPU and RAM used in cloud): calculated by get_real_Vms_usages.py file
     * *_scipt.py: running files (*: represent model) such as flgann_script.py => FLNN + GA
     
+## Model
+1. ANN (1 HL) => mlnn1hl_script.py
+2. FLNN => flnn_script.py
+3. FL-GANN => flgann_script.py
+4. FL-DENN => fldenn_script.py
+5. FL-PSONN => flpsonn_script.py
+6. FL-ABCNN => flabcnn_script.py
+7. FL-BFONN => flbfonn_script.py
+8. FL-ABFOLSNN => flabfonn_script.py
+9. FL-CSONN => flcsonn_script.py
+
 ## Notes
 1. To improve the speed of Pycharm when opening (because Pycharm will indexing when opening), you should right click to 
 paper and data folder => Mark Directory As  => Excluded
@@ -46,28 +70,3 @@ multi_cpu : input model would be cpu and ram, output model would be cpu
 multi_ram : input model would be cpu and ram, output model would be ram
 multi : input model would be cpu and ram, output model would be cpu and ram
 ```
-
-## Model
-1. ANN (1 HL) => mlnn1hl_script.py
-2. FLNN => flnn_script.py
-3. FL-GANN => flgann_script.py
-4. FL-DENN => fldenn_script.py
-5. FL-PSONN => flpsonn_script.py
-6. FL-ABCNN => flabcnn_script.py
-7. FL-BFONN => flbfonn_script.py
-8. FL-ABFOLSNN => flabfonn_script.py
-9. FL-CSONN => flcsonn_script.py
-
-## Publications
-* If you see my code and data useful and use it, please cites us here
-
-    * Nguyen, T., Tran, N., Nguyen, B. M., & Nguyen, G. (2018, November). A Resource Usage Prediction System Using Functional-Link and Genetic Algorithm Neural Network for Multivariate Cloud Metrics. In 2018 IEEE 11th Conference on Service-Oriented Computing and Applications (SOCA) (pp. 49-56). IEEE.
-
-    * Nguyen, T., Nguyen, B. M., & Nguyen, G. (2019, April). Building Resource Auto-scaler with Functional-Link Neural Network and Adaptive Bacterial Foraging Optimization. In International Conference on Theory and Applications of Models of Computation (pp. 501-517). Springer, Cham.
-
-* If you want to know more about code, or want a pdf of both above paper, contact me: nguyenthieu2102@gmail.com
-
-* Take a look at this repos, the simplify code using python (numpy) for all algorithms above. (without neural networks)
-	
-	* https://github.com/thieunguyen5991/metaheuristics
-
