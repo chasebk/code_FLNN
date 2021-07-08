@@ -4,6 +4,7 @@
 Created on Sun Apr 15 09:49:35 2018
 @author: thieunv
 """
+import os
 
 import numpy as np
 import pandas as pd
@@ -19,6 +20,9 @@ def save_loss_train_to_csv(error=None, filename=None, pathsave=None):
     return None
 
 def save_all_models_to_csv(item=None, log_filename=None, pathsave=None):
+    if not os.path.exists(pathsave):
+        os.makedirs(pathsave)
+
     with open(pathsave + log_filename + ".csv", "a+") as file:
         wr = csv.writer(file, dialect='excel')
         wr.writerow(item)
